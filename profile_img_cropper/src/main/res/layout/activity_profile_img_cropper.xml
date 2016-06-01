@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.elevensproject.instagram_like_profile_image_cropper.profile_img_cropper">
+
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        />
+
+    <com.elevensproject.instagram_like_profile_image_cropper.clipimg
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testclip"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="Gallery"
+            android:id="@+id/select_image_pick_new_image"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/select_image_confirm"/>
+
+    </LinearLayout>
+</RelativeLayout>
